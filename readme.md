@@ -1,10 +1,8 @@
-<p align="center"><img width=60% src="docs/header.png"></p>
 
 > Automated generation of Apple's iCloud emails via HideMyEmail.
 
 _You do need to have an active iCloud+ subscription to be able to generate iCloud emails..._
 
-<p align="center"><img src="docs/example.png"></p>
 
 # iCloud HideMyEmail Generator
 
@@ -39,13 +37,10 @@ dotnet build
 
 2. Go to [EditThisCookie settings page](chrome-extension://fngmhnnpilhplaeedifhccceomclgfbg/options_pages/user_preferences.html) and set the preferred export format to `Semicolon separated name=value pairs`
 
-<p align="center"><img src="docs/cookie-settings.png" width=70%></p>
-
 3. Navigate to [iCloud settings](https://www.icloud.com/settings/) in your browser and log in
 
 4. Click on the EditThisCookie extension and export cookies
 
-<p align="center"><img src="docs/export-cookies.png" width=70%></p>
 
 5. Paste the exported cookies into a file named `cookie.txt`
 
