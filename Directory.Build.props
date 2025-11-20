@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <Authors>rtuna</Authors>
+    <Company>rtuna</Company>
+    <Copyright>Copyright © 2024</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/yourusername/HideMyEmailGenerator</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/yourusername/HideMyEmailGenerator</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+</Project>

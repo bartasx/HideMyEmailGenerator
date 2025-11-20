@@ -1,12 +1,12 @@
 
-> Automated generation of Apple's iCloud emails via HideMyEmail.
-
-_You do need to have an active iCloud+ subscription to be able to generate iCloud emails..._
-
-
 # iCloud HideMyEmail Generator
 
-iCloud Hide My Email address generator written in C#.
+[![.NET](https://github.com/yourusername/HideMyEmailGenerator/actions/workflows/dotnet.yml/badge.svg)](https://github.com/yourusername/HideMyEmailGenerator/actions/workflows/dotnet.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Automated generation of Apple's iCloud emails via HideMyEmail.
+
+> **Note:** You need an active iCloud+ subscription to use Hide My Email feature.
 
 ## Requirements
 
@@ -33,7 +33,7 @@ dotnet build
 ### How to obtain cookie.txt
 
 
-1. Download [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg) Chrome extension
+1. Download [EditThisCookie](https://chromewebstore.google.com/detail/editthiscookie-v3/ojfebgpkimhlhcblbalbfjblapadhbol) Chrome extension
 
 2. Go to [EditThisCookie settings page](chrome-extension://fngmhnnpilhplaeedifhccceomclgfbg/options_pages/user_preferences.html) and set the preferred export format to `Semicolon separated name=value pairs`
 
@@ -51,19 +51,19 @@ dotnet build
 To generate the default 5 email addresses:
 
 ```shell
-dotnet run
+dotnet run --project src/HideMyEmailGenerator
 ```
 
 or
 
 ```shell
-dotnet run -- generate
+dotnet run --project src/HideMyEmailGenerator -- generate
 ```
 
 To generate a specific number of email addresses:
 
 ```shell
-dotnet run -- generate --count 10
+dotnet run --project src/HideMyEmailGenerator -- generate --count 10
 ```
 
 ### Displaying Email Addresses
@@ -71,19 +71,19 @@ dotnet run -- generate --count 10
 To display all active email addresses:
 
 ```shell
-dotnet run -- list
+dotnet run --project src/HideMyEmailGenerator -- list
 ```
 
 To display inactive email addresses:
 
 ```shell
-dotnet run -- list --inactive
+dotnet run --project src/HideMyEmailGenerator -- list --inactive
 ```
 
 To search for email addresses using a regular expression:
 
 ```shell
-dotnet run -- list --search "pattern"
+dotnet run --project src/HideMyEmailGenerator -- list --search "pattern"
 ```
 
 ## How It Works
